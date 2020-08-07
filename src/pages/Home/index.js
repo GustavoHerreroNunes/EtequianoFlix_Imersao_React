@@ -1,14 +1,13 @@
 import React from 'react';
 import Menu from '../../components/Menu';
 import BannerMain from '../../components/BannerMain';
-import Carousel from '../../components/Carousel';
+import Carrosel from '../../components/Carousel';
 import Footer from '../../components/Footer';
 import dadosIniciais from '../../data/dados_iniciais.json';
 
-
 function Home() {
   return (
-    <div>
+    <>
       <Menu />
 
       <BannerMain
@@ -17,33 +16,33 @@ function Home() {
         videoDescription={"Chegou a hora de arrumar um emprego, participar de entrevistas e entregar currículos, mas...como faço meu currículo, e como devo agir na entrevista? Confira aqui com o Iberê e a Mari do Manual do Mundo!"}
       />
 
-      <Carousel
+      <Carrosel
         ignoreFirstVideo
         category={dadosIniciais.categorias[0]}
       />
 
-      <Carousel
+      <Carrosel
         category={dadosIniciais.categorias[1]}
       />
 
-      <Carousel
+      <Carrosel
         category={dadosIniciais.categorias[2]}
       />      
 
-      <Carousel
+      <Carrosel
         category={dadosIniciais.categorias[3]}
       />      
 
-      <Carousel
+      <Carrosel
         category={dadosIniciais.categorias[4]}
       />      
 
-      <Carousel
+      <Carrosel
         category={dadosIniciais.categorias[5]}
       />      
 
       <Footer />
-    </div>
+    </>
   );
 }
 
